@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharath Naik Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-blue-100 min-h-screen">
+  <!-- Header Section -->
+  <header class="bg-blue-500 text-white shadow-lg py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-3xl font-bold">Sharath</h1>
+      <nav>
+        <ul class="flex space-x-4 text-lg">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#skills" class="hover:underline">Skills</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between py-16 px-4 container mx-auto">
+    <div class="text-center md:text-left md:w-1/2">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">Hello, I'm Sharath Naik</h2>
+      <p class="mt-4 text-gray-600 text-lg">A passionate developer dedicated to building user-friendly and innovative web solutions.</p>
+      <button class="mt-6 bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">Learn More About Me</button>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+      <img src="images.jpg" alt="Hero Image" class="rounded-lg shadow-xl w-full md:w-3/4">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800">My Skills</h2>
+      <p class="text-center text-gray-600 mt-2">Technologies and tools I excel at</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+          <h3 class="text-2xl font-bold text-blue-600">Web Development</h3>
+          <p class="text-gray-600 mt-2">HTML, CSS, JavaScript, and modern frameworks like React.js and Tailwind CSS.</p>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+          <h3 class="text-2xl font-bold text-blue-600">Backend Development</h3>
+          <p class="text-gray-600 mt-2">Experience with Node.js, Express.js, and database management using MySQL and MongoDB.</p>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+          <h3 class="text-2xl font-bold text-blue-600">Problem Solving</h3>
+          <p class="text-gray-600 mt-2">Proficient in logical thinking and solving complex programming challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800">My Projects</h2>
+      <p class="text-center text-gray-600 mt-2">Here are some of the projects I have worked on</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-blue-600">Food Donation App</h3>
+          <p class="text-gray-600 mt-2">An Android application for connecting donors and recipients to minimize food wastage.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-blue-600">Learn Programming App</h3>
+          <p class="text-gray-600 mt-2">A Kotlin-based app that provides resources and tutorials for beginner programmers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <img src="th.jpg" alt="About Me" class="rounded-lg shadow-xl w-full md:w-3/4">
+      </div>
+      <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+        <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
+        <p class="text-gray-600 mt-4">I am a developer with a strong passion for creating efficient and beautiful web solutions. I strive to continuously learn and implement modern technologies to enhance user experience.</p>
+        <button class="mt-6 bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600">Know More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-blue-500 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold">Contact Me</h2>
+      <p class="mt-2">I'd love to hear from you! Feel free to reach out.</p>
+      <form action="#" class="mt-8 space-y-4">
+        <div>
+          <input type="text" placeholder="Your Name" class="w-full py-3 px-4 rounded-lg text-gray-800 focus:outline-none">
+        </div>
+        <div>
+          <input type="email" placeholder="Your Email" class="w-full py-3 px-4 rounded-lg text-gray-800 focus:outline-none">
+        </div>
+        <div>
+          <textarea placeholder="Your Message" class="w-full py-3 px-4 rounded-lg text-gray-800 focus:outline-none" rows="5"></textarea>
+        </div>
+        <button type="submit" class="bg-white text-blue-500 py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2025 Sharath Naik. All rights reserved.</p>
+  </footer>
+</body>
+</html>
